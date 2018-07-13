@@ -6,9 +6,12 @@ import registerServiceWorker from './registerServiceWorker';
 
 import { Provider } from 'mobx-react';
 import BirdStore from './stores/BirdStore';
+import WeatherStore from './stores/WeatherStore';
 
 const Root = (
-    <Provider BirdStore={BirdStore}>
+    <Provider 
+        BirdStore={BirdStore} 
+        WeatherStore={WeatherStore}>
         <App></App>
     </Provider>
 );
